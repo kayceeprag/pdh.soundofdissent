@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sound of Dissent – Protest Music & Movements</title>
+
+    <!-- TimelineJS -->
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <link
+      href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css"
+      rel="stylesheet"
+    />
+
+    <!-- Optional Styling -->
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e0f2f1;
+        color: #222;
+      }
+
+      header {
+        background: linear-gradient(to right, #008080, #cc5500);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2em;
+      }
+
+      .section {
+        padding: 30px;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      iframe {
+        width: 100%;
+        max-height: 900px; /* Default for large screens */
+        border: none;
+      }
+
+      @media (max-width: 1024px) {
+        iframe {
+          max-height: 700px; /* For tablets */
+        }
+      }
+
+      @media (max-width: 768px) {
+        iframe {
+          max-height: 500px; /* For mobile devices */
+        }
+      }
+      footer {
+        text-align: center;
+        font-size: 0.9em;
+        color: #666;
+        padding: 20px;
+      }
+
+      .btns {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .btns a {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #222;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s;
+      }
+
+      .btns a:hover {
+        background-color: #444;
+      }
+      .notice {
+        background-color: #e0f2f1;
+        color: #004d40;
+        padding: 1rem;
+        border-left: 4px solid #008080;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Sound of Dissent</h1>
+      <p>Mapping Protest Music and Political Movements Across the World</p>
+    </header>
+
+    <div class="section">
+      <h2>Project Overview</h2>
+      <p>
+        <strong>Sound of Dissent</strong> explores the powerful connection
+        between protest music and political movements across different eras and
+        cultures. This project presents an interactive timeline and world map
+        highlighting key protest songs and the historical events they were tied
+        to – from Africa to the USA, Russia, and beyond.
+      </p>
+    </div>
+    <div class="notice">
+      <strong>Note:</strong> If the timeline doesn't display correctly, please
+      refresh the page for the best viewing experience.
+    </div>
+
+    <!-- TimelineJS Section -->
+    <div class="section" id="timeline">
+      <h2>Interactive Timeline</h2>
+      <iframe
+        src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2:2PACX-1vRrtcQzzK14CHZ1R0wPlTI8Iq6UjsIoIrK7a7bvG0OJ894FowY6d8-jnaErCzORMIKYtKER-XQK-42y&font=Default&lang=en&initial_zoom=2&height=650"
+        width="100%"
+        height="650"
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen
+        frameborder="0"
+      >
+      </iframe>
+    </div>
+
+    <!-- StoryMapJS Section -->
+    <div class="section" id="storymap">
+      <h2>Interactive StoryMap</h2>
+      <iframe
+        src="https://uploads.knightlab.com/storymapjs/6533332b23f9090cbd6634c5ae90245d/sound-of-dissent/index.html"
+        frameborder="0"
+        width="100%"
+        height="800"
+      >
+      </iframe>
+    </div>
+
+    <footer>
+      &copy; 2025 Sound of Dissent. Developed for educational and research
+      purposes.
+    </footer>
+  </body>
+</html>
